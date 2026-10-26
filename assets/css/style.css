@@ -1678,8 +1678,8 @@ a.content-item:hover {
     color: var(--color-text-light);
     margin-bottom: 20px;
 }
-/* 次回公演の本文内リンクだけ、一般的なリンク色と下線で示す。 */
-.schedule-box--coming-soon .schedule-address a {
+/* 予約URLだけに適用し、ブラウザーが自動認識した番号は対象にしない。 */
+.schedule-box--coming-soon .schedule-address a[href="http://sunset-blue.net/ticket/"] {
     color: #0000ee;
     text-decoration: underline;
 }
